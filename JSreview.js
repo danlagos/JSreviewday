@@ -48,26 +48,26 @@
 // hint: you will need a loop
 // hint: use the .includes() method
 
-var testSentence1 = "Toma Carajo!"
-//expected output = “Ths wbst s wsm!”
-
-function removeVowels(testSentence1) {
-
-var vowels = ["a", "e", "i", "o", "u"]
-var splitSentence = testSentence1.split("")
-var consonants = []
-
-// for (let i = 0; i < testSentence1.length; i++){
-//   if (testSentence1.includes(vowels[i]) === false) {
-//     consonants.push(testSentence1[i])
+// var testSentence1 = "Toma Carajo!"
+// //expected output = “Ths wbst s wsm!”
+//
+// function removeVowels(testSentence1) {
+//
+// var vowels = ["a", "e", "i", "o", "u"]
+// var splitSentence = testSentence1.split("")
+// var consonants = []
+//
+// // for (let i = 0; i < testSentence1.length; i++){
+// //   if (testSentence1.includes(vowels[i]) === false) {
+// //     consonants.push(testSentence1[i])
+// //   }
+//
+// for (let i = 0; i < splitSentence.length; i++) {
+//   //splitsentence and vowels are swapped, change them on next line
+//   if (!vowels.includes(splitSentence[i])) {
+//     consonants.push(splitSentence[i])
 //   }
-
-for (let i = 0; i < splitSentence.length; i++) {
-  //splitsentence and vowels are swapped, change them on next line
-  if (!vowels.includes(splitSentence[i])) {
-    consonants.push(splitSentence[i])
-  }
-}   return(consonants)
-}
-
-console.log(removeVowels(testSentence1))
+// }   return(consonants)
+// }
+//
+// console.log(removeVowels(testSentence1))
