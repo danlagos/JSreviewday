@@ -1,22 +1,45 @@
 // input should strings.  takes a string.  reverse it into a new string.  compare the two to ensure they equal.  If equal, run palindrome output.  Else run "not palimdonre output."
 
 
+//
+// function checkPalindrome(stringObj) {
+//
+//   // turn stringObj from string into array
+//   var checkArray = stringObj.split("").reverse().join("")
+//
+//   // check for equality
+//   if ( checkArray === stringObj) {
+//     console.log(checkArray + " is a palindrome of " + stringObj)
+//
+//   } else {
+//     console.log(checkArray + " is NOT a palindrome of " + stringObj);
+//
+//   }
+//
+// }
+//
+// checkPalindrome("nomad");
 
-function checkPalindrome(stringObj) {
+//Write a function that takes in two arrays (of numbers) and checks for duplicates.  The function should output a new array without duplicates
 
-  // turn stringObj from string into array
-  var checkArray = stringObj.split("").reverse().join("")
+// hint: you will need a loop
+// hint: use the .includes() method
 
-  // check for equality
-  if ( checkArray === stringObj) {
-    console.log(checkArray + " is a palindrome of " + stringObj)
+// two arrays
+var arr1 = [1, 2, 3, 4]
+var arr2 = [1, 3, 5, 7]
 
-  } else {
-    console.log(checkArray + " is NOT a palindrome of " + stringObj);
+// 1, 2, 3, 4, 5, 7
 
+function dupCheck(objOne, objTwo) {
+var arr3 = []
+var arr4 = []
+
+for (let i = 0; i < objOne.length; i++) {
+  if (objTwo.includes(objOne[i]) === false) {
+    arr3.push(objOne[i])
   }
+} arr4 = arr3.concat(objTwo)
+    return arr4 }
 
-}
-// //
-// // function checkPalindrome(stringObj)
-checkPalindrome("nomad");
+console.log(dupCheck(arr1, arr2))
